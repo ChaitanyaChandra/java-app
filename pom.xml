@@ -1,9 +1,9 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <modelVersion>4.0.0</modelVersion>
-    <groupId>chaitu.org</groupId>
-    <artifactId>chaitu</artifactId>
-    <packaging>jar</packaging>
-    <version>1.0</version>
-    <name>Status</name>
+	    <modelVersion>4.0.0</modelVersion>
+      <groupId>chaitu.org</groupId>
+			<artifactId>chaitu</artifactId>
+      <packaging>jar</packaging>
+			<version>1.0</version>
+			<name>status</name>
 
 </project>

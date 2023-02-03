@@ -1,8 +1,6 @@
-package src.main.java.status;
-
-class Status
+public class status
 {
-    public static void main(String args[])
+    public static void main(String[] args)
     {
 
         URL url = new URL("localhost:8080");
@@ -19,3 +17,4 @@ class Status
 //        }
     }
 }
+
