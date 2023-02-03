@@ -1,10 +1,10 @@
 package com.chaitu.net;
-public class api {
+public class Api {
     public String sayHello() {
         return "Hello world!";
     }
 }
-//public class api
+// public class api
 //{
 //    public static void main(String[] args)
 //    {
