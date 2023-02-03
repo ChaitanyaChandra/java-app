@@ -1,4 +1,4 @@
-package com.chaitu.net;
+package status.chaitu.net;
 
 public class status {
     public static void main(String[] args) {

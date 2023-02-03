@@ -1,4 +1,4 @@
-package com.chaitu.net;
+package status.chaitu.net;
 public class Api {
     public String sayHello() {
 
