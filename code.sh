@@ -3,7 +3,7 @@
 # setup user
 adduser java-user
 
-yum install java mvn git -y
+yum install java maven git -y
 
 cd /home/java-user/
 git clone https://github.com/ChaitanyaChandra/status-app.git

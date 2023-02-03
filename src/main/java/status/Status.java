@@ -1,3 +1,5 @@
+package src.main.java.status;
+
 class Status
 {
     public static void main(String args[])
