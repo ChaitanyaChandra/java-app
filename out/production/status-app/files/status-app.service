@@ -1,0 +1,12 @@
+[Unit]
+Description = status app Service
+
+[Install]
+WantedBy=multi-user.target
+
+[Service]
+User=spec
+ExecStart=/bin/java -Xms2900m -Xmx3300m -jar /home/java-user/status-app/status-app.jar
+SyslogIdentifier=status-app
+# StandardOutput=syslog
+# StandardError=syslog
