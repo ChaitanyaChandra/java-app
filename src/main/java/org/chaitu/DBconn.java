@@ -57,6 +57,7 @@ public class DBconn {
 
 
         } catch (Exception e) {
+            System.out.println("Database connection error! please check credentials");
             e.printStackTrace();
             System.exit(0);
         }
