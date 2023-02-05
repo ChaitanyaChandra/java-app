@@ -38,10 +38,12 @@ public class Api {
             postDB postdb = new postDB();
             postdb.call(time_stamp, 1, "Error: The URL is malformed.");
             System.out.println("Error: The URL is malformed.");
+            System.exit(0);
         } catch (IOException e) {
             postDB postdb = new postDB();
             postdb.call(time_stamp, 1, "Error: Could not connect to localhost.");
             System.out.println("Error: Could not connect to localhost.");
+            System.exit(0);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
