@@ -14,12 +14,9 @@ echo Environment="MONGO_ENDPOINT=mongodb+srv://$db_user:$db_pass@cluster0.wdtudb
 cp files/status-app.service /etc/systemd/system/
 systemctl start status-app.service
 
-sudo yum install epel-release -y
-sudo yum install nginx -y
+sudo yum install tomcat tomcat-webapps tomcat-admin-webapps -y
 
-yes | cp -rf files/nginx.conf /etc/nginx/nginx.conf
-yes | cp -rf files/nodejs.conf /etc/nginx/conf.d/nodejs.conf
-setenforce 0
-systemctl restart nginx
-# node .js > node.logs 2>&1 &
-# ps -ef | grep "index.js" > run.log
+echo 'JAVA_OPTS="-Djava.security.egd=file:/dev/./urandom -Djava.awt.headless=true -Xmx512m -XX:MaxPermSize=256m -XX:+UseConcMarkSweepGC"
+' >> /usr/share/tomcat/conf/tomcat.conf
+
+curl -s https://raw.githubusercontent.com/ChaitanyaChandra/status-app/main/files/tomcat-users.xml > /usr/share/tomcat/conf/tomcat-users.xml
