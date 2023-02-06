@@ -26,7 +26,8 @@ public class postDB {
 
             Document document = new Document("TimeStamp", TimeStamp)
                     .append("front_end", new Document("status code", StatusCode)
-                            .append("status", raw_status));
+                            .append("status", raw_status)
+                            .append("version", "1.0"));
 
             mongoDBConnection = DBconn.getInstance();
             collection = mongoDBConnection.getDatabase().getCollection("data");
