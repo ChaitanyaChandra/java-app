@@ -11,3 +11,5 @@ SyslogIdentifier=status-app
 
 # StandardOutput=syslog
 # StandardError=syslog
+Environment="APP_VERSION=0.0"
+Environment="ENV=test"
