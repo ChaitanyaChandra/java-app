@@ -8,7 +8,7 @@ public class postDB {
     private MongoCollection<Document> collection;
 
 
-    public void call(String TimeStamp, int StatusCode, String raw_status) {
+    public void call(String TimeStamp, int StatusCode, String raw_status, String app_version, String environment) {
         try {
 
             if (StatusCode >= 200 && StatusCode <= 299) {
@@ -27,7 +27,8 @@ public class postDB {
             Document document = new Document("TimeStamp", TimeStamp)
                     .append("front_end", new Document("status code", StatusCode)
                             .append("status", raw_status)
-                            .append("version", "1.0"));
+                            .append("version", app_version)
+                            .append("env", environment));
 
             mongoDBConnection = DBconn.getInstance();
             collection = mongoDBConnection.getDatabase().getCollection("data");
