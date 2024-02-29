@@ -1,5 +1,5 @@
 @Library('spec') _
 
-env.RUNNER = "node"
+env.RUNNER = "worker:node1"
 env.COMPONENT = "java-app"
 java()
